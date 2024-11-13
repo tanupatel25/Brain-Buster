@@ -1,0 +1,22 @@
+// .devcontainer/devcontainer.json
+
+{
+    "name": "C Development Environment",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "ms-vscode.makefile-tools"
+    ],
+    "containerEnv": {
+        "MY_ENV_VAR1": "",
+    },
+    "postCreateCommand": [
+        "echo 'Container is ready!'"],
+    "remoteUser": "root"
+}
